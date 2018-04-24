@@ -1,0 +1,12 @@
+syntax = "proto3";
+package hydraproto;
+
+import "header.proto";
+
+message Message {
+    bytes value = 1;
+    bytes key = 2;
+    int64 timestamp = 3;
+    repeated Header headers = 4;
+    bool encrypted = 5;
+}

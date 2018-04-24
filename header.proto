@@ -1,0 +1,7 @@
+syntax = "proto3";
+package hydraproto;
+
+message Header {
+    string key = 1;
+    bytes value = 2;
+}
